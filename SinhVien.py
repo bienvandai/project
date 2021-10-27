@@ -3,13 +3,13 @@
 class sinhvien:
     count = 0
 
-    def __init__(self, id, name, date, sex, major, course):
+    def __init__(self, id, name, date, gender, majors, course):
         self.id = id
         self.name = name
         self.date =  date
-        self.sex = sex
+        self.gender = gender
         self.course = course
-        self.major = major
+        self.majors = majors
         sinhvien.count +=1
 
 
@@ -26,26 +26,26 @@ class sinhvien:
     def get_date(self):
         return self.date
 
-    def set_sex(self,sex):
-        self.sex = sex
-    def get_sex(self):
-        return self.sex
+    def set_gender(self,gender):
+        self.gender = gender
+    def get_gender(self):
+        return self.gender
 
     def set_course(self,course):
         self.course = course
     def get_course(self):
         return self.course
 
-    def set_major(self,major):
-        self.major = major
-    def get_major(self):
-        return self.major
+    def set_majors(self,majors):
+        self.major = majors
+    def get_majors(self):
+        return self.majors
         
     def show_info(self):
         print(f"\nMã sinh viên: {self.id}")
         print(f"Tên sinh viên: {self.name}")
         print(f"Ngày tháng năm sinh: {self.date}")
-        print(f"Giới tính: {self.sex}")
-        print(f"Nghành học: {self.major}")
+        print(f"Giới tính: {self.gender}")
+        print(f"Nghành học: {self.majors}")
         print(f"Khóa: {self.course}\n")
 

@@ -25,10 +25,10 @@ while True:
             id = input("Nhập mã sinh viên: ")
             name = input("Nhập tên sinh viên: ")
             date = input("Nhập ngày tháng năm sinh: ")
-            sex = input("Nhập giới tính: ")
-            major = input("Nhập ngành học: ")
+            gender = input("Nhập giới tính: ")
+            majors = input("Nhập ngành học: ")
             course = input("Nhập khóa: ")
-            sv = sinhvien(id, name, date, sex, major, course)
+            sv = sinhvien(id, name, date, gender, majors, course)
             list.append(sv)
     # 2.Sửa thông tin sinh viên
         elif select == 2:
@@ -38,8 +38,8 @@ while True:
                 if i.get_id() == id:
                     i.set_name(input("Nhập tên: "))
                     i.set_date(input("Nhập ngày tháng năm sinh: "))
-                    i.set_sex(input("Nhập Giới tính: "))
-                    i.set_major(input("Nhập nghành học: "))
+                    i.set_gender(input("Nhập Giới tính: "))
+                    i.set_majors(input("Nhập nghành học: "))
                     i.set_course(input("Nhập khóa: "))
                     
                     i.show_info()
