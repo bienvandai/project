@@ -3,10 +3,10 @@
 class sinhvien:
     count = 0
 
-    def __init__(self, id, name, date, gender, majors, course):
+    def __init__(self, id, name, age, gender, majors, course):
         self.id = id
         self.name = name
-        self.date =  date
+        self.age =  age
         self.gender = gender
         self.course = course
         self.majors = majors
@@ -21,10 +21,10 @@ class sinhvien:
     def get_name(self):
         return self.name
 
-    def set_date(self, date):
-        self.date = date
-    def get_date(self):
-        return self.date
+    def age(self, age):
+        self.age = age
+    def get_age(self):
+        return self.age
 
     def set_gender(self,gender):
         self.gender = gender
@@ -42,10 +42,14 @@ class sinhvien:
         return self.majors
         
     def show_info(self):
-        print(f"\nMã sinh viên: {self.id}")
-        print(f"Tên sinh viên: {self.name}")
-        print(f"Ngày tháng năm sinh: {self.date}")
-        print(f"Giới tính: {self.gender}")
-        print(f"Nghành học: {self.majors}")
-        print(f"Khóa: {self.course}\n")
-
+        # print(f"\nMã sinh viên: {self.id}")
+        # print(f"Tên sinh viên: {self.name}")
+        # print(f"Ngày tháng năm sinh: {self.age}")
+        # print(f"Giới tính: {self.gender}")
+        # print(f"Nghành học: {self.majors}")
+        # print(f"Khóa: {self.course}\n")
+        print("------------------------------------- DANH SÁCH SINH VIÊN -------------------------------------")
+        print("{:<5} {:<20} {:<10} {:<20} {:<30} {:<10}".format('ID','Tên','Tuổi','Giới tính','Ngành học','Khóa học'))
+        print("-----------------------------------------------------------------------------------------------")
+        print("{:<5} {:<20} {:<10} {:<20} {:<30} {:<10}".format(self.id,self.name,self.age,self.gender,self.majors,self.course))
+        print("-----------------------------------------------------------------------------------------------")
